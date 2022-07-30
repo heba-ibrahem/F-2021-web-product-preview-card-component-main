@@ -19,7 +19,7 @@
 
 /* screens */
 @media only screen and (max-width: 1440px) {
-    .container{
+    .card{
         width: 600px;
         height: 450px;
     }
@@ -37,7 +37,7 @@
     }
 }
 @media only screen and (max-width: 450px){
-    .container{
+    .card{
         width: 345px;
         height: 615px;
         flex-direction: column;
@@ -79,6 +79,10 @@ body{
     justify-content: center;
 }
 .container{
+    display: flex;
+    flex-direction: column;
+}
+.card{
     background-color: var(--white);
     display: flex;
     margin: 175px 0;

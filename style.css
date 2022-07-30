@@ -25,7 +25,7 @@
     }
     .img {
         width: 1100px;
-        height: 425px;  
+        /* height: 425px;   */
         border-radius: 10px 0 0 10px;
         background-image: url(images/image-product-desktop.jpg);
         flex-direction: row;
@@ -66,8 +66,8 @@
 h1{
     font-family: Fraunces;
     color: var(--veryDarkBlue);
-    font-size: 32px;
-    margin: 20px 0 25px 0;
+    font-size: 33px;
+    margin: 20px 0 30px 0;
     line-height: 1;
 }
 

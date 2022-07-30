@@ -1,0 +1,129 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* colors */
+:root{
+
+ /* Primary */
+
+--darkCyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+
+ /* Neutral */
+
+--veryDarkBlue: hsl(212, 21%, 14%);
+--darkGrayishBlue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+}
+
+/* screens */
+@media only screen and (max-width: 1440px) {
+    .container{
+        width: 600px;
+        height: 450px;
+    }
+    .img {
+        width: 1100px;
+        height: 425px;  
+        border-radius: 10px 0 0 10px;
+        background-image: url(images/image-product-desktop.jpg);
+        flex-direction: row;
+        background-size: cover;
+
+    }
+    .txt{
+        padding: 30px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .container{
+        width: 345px;
+        height: 615px;
+        flex-direction: column;
+    }
+    .img {
+        width: 345px;
+        height: 240px;  
+        border-radius: 10px 10px 0 0;
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: cover;
+    }
+    .txt{
+        padding: 25px;
+    }
+
+}
+
+*{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat' ;
+    font-weight: 500;
+    color: var(--darkGrayishBlue);
+}
+h1{
+    font-family: Fraunces;
+    color: var(--veryDarkBlue);
+    font-size: 32px;
+    margin: 20px 0 25px 0;
+    line-height: 1;
+}
+
+body{
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: var(--white);
+    display: flex;
+    margin: 175px 0;
+    border-radius: 10px;   
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+}
+.txt p{
+    line-height: 1.6;
+}
+.smallTitle{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price h1{
+    color: var(--darkCyan);
+    margin-right: 20px;
+}
+.price p{
+    text-decoration: line-through;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    background-color: var(--darkCyan);
+    color: var(--white);
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: #1a3f31;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
